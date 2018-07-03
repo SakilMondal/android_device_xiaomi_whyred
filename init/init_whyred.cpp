@@ -34,10 +34,12 @@
 #include <sys/_system_properties.h>
 
 #include "property_service.h"
-#include "vendor_init.h"
 
 using android::base::GetProperty;
 using android::init::property_set;
+
+namespace android {
+namespace init {
 
 void property_override(char const prop[], char const value[])
 {
@@ -83,3 +85,5 @@ void vendor_load_properties()
 
     init_setup_model_properties();
 }
+}  // namespace init
+}  // namespace android
