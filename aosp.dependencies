@@ -10,5 +10,11 @@
     "repository":  "SakilMondal/proprietary_vendor_xiaomi_whyred",
     "target_path": "vendor/xiaomi/whyred",
     "branch":      "9.x"
+  },
+  {
+    "remote":      "github",
+    "repository":  "SakilMondal/vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera",
+    "branch":      "9.x"
   }
 ]
