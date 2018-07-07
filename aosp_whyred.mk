@@ -31,6 +31,9 @@ $(call inherit-product, vendor/aosp/common.mk)
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 2140
 
+# Inherit from custom vendor
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 PRODUCT_NAME := aosp_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
