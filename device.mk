@@ -432,3 +432,6 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+PRODUCT_CFI_INCLUDE_PATHS += \
+    hardware/qcom/wlan-caf/qcwcn/wpa_supplicant_8_lib
