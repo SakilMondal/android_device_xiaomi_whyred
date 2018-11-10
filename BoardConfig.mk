@@ -224,10 +224,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VENDORIMAGE_PARTITION_SIZE := 838860800
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware \
-    /vendor/bt_firmware:/bt_firmware
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
@@ -248,6 +244,13 @@ TARGET_HAS_NO_POWER_STATS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RIL_VARIANT := caf
+
+# Root
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/dsp:/dsp \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/bt_firmware:/bt_firmware \
+    /mnt/vendor/persist:/persist
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-06-05
