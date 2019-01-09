@@ -14,3 +14,5 @@ allow system_server sysfs_rtc:file r_file_perms;
 r_dir_file(system_server, idc_file)
 # /vendor/usr/idc
 r_dir_file(system_server, keylayout_file)
+
+get_prop(system_server, vendor_camera_prop)
