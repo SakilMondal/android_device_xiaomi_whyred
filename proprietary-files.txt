@@ -1192,6 +1192,27 @@ vendor/lib64/libmlipay.so|845818cdb3f852a1799e38d44517b4acd3d057fb
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|d0bb854210433066945f9d6e7943d08a8435e746
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|785984e3c3b30671b78624484899dd418979cb56
 
+# QTI Performance libs - from MIUI STABLE V10.3.4.0.PEICNXM
+-framework/QPerformance.jar|78d7661d4b9ea66860623256f41b4c44387132ef
+-framework/UxPerformance.jar|b6f0a7600d3bf7bd5f96e1d6b8fb57c4903337cf
+bin/perfservice|03d6368017d4c41f7fea647c669b69d6567238af
+etc/init/perfservice.rc|67144c3f1800f976cb58463c4370882d2d820947
+etc/perf/whitelistedapps.xml|5f0d7c4f34b0da381c9eb837234f3c94e66f610b
+lib/libqti-at.so|1101ee354735905f39337bc032c6b547dbce846c
+lib/libqti-perfd-client_system.so|b15c6168b5dae923b98ea0a9dd62ee54d083fe7c
+lib/libqti-iopd-client_system.so|0693b404de3f108785ace90e376326409a9086ed
+lib/libqti-util_system.so|66fcc57fee4f978f9b52429539b980ac3550f8e3
+lib/libqti_performance.so|3a1eb20e3110589091e031f22c3c58d11e73decb
+lib/vendor.qti.hardware.iop@1.0.so|286aa805d8a5d4a1f3572b57ba2630057190a12a
+lib/vendor.qti.hardware.iop@2.0.so|606e5a2172fd943cf0adf05476c4a4af561375a5
+lib64/libqti-at.so|d4bd59dc50cb466ce3c2efb96cb2f2bb232a1baa
+lib64/libqti-perfd-client_system.so|eebb0ed9fb854632846b1ca483b5a7bb4f48e466
+lib64/libqti-iopd-client_system.so|ecd88972a4a6134ba00fbb8979fda0cac5f4f73a
+lib64/libqti-util_system.so|0e62bd1422f40154c22e858df268009bb66d4f2f
+lib64/libqti_performance.so|f7e910799058de5f45a20efb032f9cc770c59d12
+lib64/vendor.qti.hardware.iop@1.0.so|e190ffef8f0682d6be885321451cb5ed50d25475
+lib64/vendor.qti.hardware.iop@2.0.so|27fe9fc0b473478ebddccb3f51af05cbc02f579c
+
 # Perf - from LA.UM.7.2.r1-06900-sdm660.0
 vendor/bin/energy-awareness|c1ad0ec1e4171b59f166e580ef8ce7395ccb41a5
 vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
