@@ -68,5 +68,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio.adm.buffering.ms=2
 
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024
