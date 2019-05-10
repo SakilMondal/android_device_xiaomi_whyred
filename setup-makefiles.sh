@@ -27,9 +27,9 @@ INITIAL_COPYRIGHT_YEAR=2018
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-MK_ROOT="$MY_DIR"/../../..
+AEX_ROOT="$MY_DIR"/../../..
 
-HELPER="$MK_ROOT"/vendor/mk/build/tools/extract_utils.sh
+HELPER="$AEX_ROOT"/vendor/aosp/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -37,20 +37,20 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$AEX_ROOT"
 
 # Copyright headers and guards
 write_headers
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
 
-cat << EOF >> "$BOARDMK"
+cat << EOF >> "$BOARDAEX"
 ifeq (\$(WITH_TWRP),true)
 TARGET_RECOVERY_DEVICE_DIRS += vendor/$VENDOR/$DEVICE/proprietary
 endif
 EOF
 
-cat << EOF >> "$ANDROIDMK"
+cat << EOF >> "$ANDROIDAEX"
 
 EOF
 

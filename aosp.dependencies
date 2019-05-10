@@ -1,0 +1,13 @@
+[
+    "remote":      "github",
+    "repository":  "SakilMondal/android_kernel_xiaomi_whyred",
+    "target_path": "kernel/xiaomi/whyred",
+    "branch":      "10.x"
+  },
+  {
+    "remote":      "github",
+    "repository":  "SakilMondal/proprietary_vendor_xiaomi_whyred",
+    "target_path": "vendor/xiaomi/whyred",
+    "branch":      "10.x"
+  }
+]
