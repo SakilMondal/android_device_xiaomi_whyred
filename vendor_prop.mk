@@ -121,9 +121,6 @@ vendor.audio.spkr_prot.tx.sampling_rate=48000
 
 #Set AudioFlinger client heap size
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.af.client_heap_size_kbyte=7168
-
-PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio.adm.buffering.ms=2
