@@ -820,6 +820,14 @@ vendor/etc/qdcm_calib_data_shenchao_td4310_fhd_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_tianma_td4310_fhd_video_mode_dsi_panel.xml
 
+# Display
+lib/libsdm-disp-apis.so
+lib/libsd_sdk_display.so|600d9cfbcd7c7b95aede7754f21ae7100d8ec51f
+lib/vendor.display.color@1.0.so
+lib64/libsdm-disp-apis.so
+lib64/libsd_sdk_display.so|6ce8dc56e0c1b2966a282ee7b66058df34b6a009
+lib64/vendor.display.color@1.0.so
+
 # DPM
 bin/dpmd
 etc/dpm/dpm.conf

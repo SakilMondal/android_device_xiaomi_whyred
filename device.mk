@@ -304,6 +304,10 @@ PRODUCT_PACKAGES += \
     animation.txt \
     font_charger.png
 
+# Omni display
+PRODUCT_PACKAGES += \
+    OmniDisplayManager
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
