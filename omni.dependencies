@@ -58,5 +58,11 @@
     "repository": "android_vendor_qcom_opensource_commonsys",
     "target_path": "vendor/qcom/opensource/commonsys",
     "revision": "android-9.0"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_packages_apps_SnapdragonCamera2",
+    "target_path": "packages/apps/SnapdragonCamera2",
+    "revision": "android-9.0"
   }
 ]
