@@ -51,6 +51,14 @@ vendor.display.disable_skip_validate=1
 # system props for the cne module
 #
 persist.vendor.cne.feature=1
+#modified by dingjian for Xiaomi Requirement of disable NRSM start 20181106
+persist.cne.feature=1
+
+#
+# system props for the dpm module
+#
+persist.dpm.feature=1
+#modified by dingjian for Xiaomi Requirement of disable NRSM end 20181106
 
 #system props for the MM modules
 media.stagefright.enable-player=true
@@ -229,6 +237,13 @@ vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.
 
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
+#add for dirac algo tsx 9/12
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+#set for xiaomi headset effect
+ro.audio.soundfx.dirac=true
 
 #add for dirac algo tsx 9/12
 persist.dirac.acs.controller=qem
@@ -240,6 +255,8 @@ ro.audio.soundfx.dirac=true
 
 #system prop for Bluetooth SOC type
 vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 
 # Property for backup NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
@@ -255,6 +272,17 @@ persist.vendor.radio.snapshot_timer=5
 
 #HTH-30190 connect wifi, set 3G pre,observe Mobile network type should display UMTS but IWLAN.
 persist.vendor.radio.data_con_rprt=1
+
+#paper mode
+sys.paper_mode_max_level=32
+sys.tianma_td4310_offset=5
+sys.tianma_td4310_length=55
+sys.shenchao_td4310_offset=-2
+sys.shenchao_td4310_length=45
+sys.tianma_nt36672_offset=2
+sys.tianma_nt36672_length=45
+sys.huaxing_nt36672_offset=2
+sys.huaxing_nt36672_length=44
 
 #lct liuxuan add the dom ignore time
 persist.vendor.radio.ignore_dom_time=15
