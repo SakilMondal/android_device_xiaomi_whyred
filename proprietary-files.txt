@@ -1047,7 +1047,6 @@ vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
 # Listen
-vendor/etc/audio.scd
 vendor/lib/hw/sound_trigger.primary.sdm660.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
@@ -1055,15 +1054,11 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/libsmwrapper.so
-vendor/lib/libnwa.so
-vendor/lib/libsse.so
 vendor/lib64/hw/sound_trigger.primary.sdm660.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
-vendor/lib64/libnwa.so
-vendor/lib64/libsse.so
 
 # Media
 lib/libmmosal.so
@@ -1138,6 +1133,25 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
 # Perf
+bin/perfservice
+etc/init/perfservice.rc
+etc/perf/whitelistedapps.xml
+lib/vendor.qti.hardware.perf@1.0.so
+lib/vendor.qti.hardware.iop@1.0.so
+lib/vendor.qti.hardware.iop@2.0.so
+lib/libqti_performance.so
+lib/libqti-util_system.so
+lib/libqti-perfd-client_system.so
+lib/libqti-iopd-client_system.so
+lib/libqti-at.so
+lib64/vendor.qti.hardware.perf@1.0.so
+lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.iop@2.0.so
+lib64/libqti_performance.so
+lib64/libqti-util_system.so
+lib64/libqti-perfd-client_system.so
+lib64/libqti-iopd-client_system.so
+lib64/libqti-at.so
 vendor/bin/energy-awareness
 vendor/bin/msm_irqbalance
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
@@ -1150,11 +1164,21 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/vendor.qti.hardware.perf@1.0.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib/libqti-utils.so
+vendor/lib/libqti-iopd-client.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib64/libqti-utils.so
+vendor/lib64/libqti-iopd-client.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -1175,8 +1199,10 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # QMI - from MI 8 Lite platina-user 9 PKQ1.181007.001 9.3.28 release-keys
-etc/permissions/qti_permissions.xml
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
+
+# QMI
+etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/lib/libdiag.so
