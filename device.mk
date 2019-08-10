@@ -437,3 +437,5 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+export EXTENDED_BUILD_TYPE=OFFICIAL
