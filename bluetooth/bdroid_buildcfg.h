@@ -22,6 +22,8 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#pragma push_macro("PROPERTY_VALUE_MAX")
+
 #include <cutils/properties.h>
 #include <string.h>
 
@@ -38,7 +40,6 @@ static inline const char* BtmGetDefaultName()
     // Fallback to ro.product.model
     return "";
 }
-#undef PROPERTY_VALUE_MAX
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 #define BLUETOOTH_QTI_SW TRUE
@@ -51,5 +52,7 @@ static inline const char* BtmGetDefaultName()
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
+
+#pragma pop_macro("PROPERTY_VALUE_MAX")
 
 #endif
