@@ -22,20 +22,12 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#include <stdint.h>
+#include <cutils/properties.h>
 #include <string.h>
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-int property_get(const char *key, char *value, const char *default_value);
-#ifdef __cplusplus
-}
-#endif
 
 static inline const char* BtmGetDefaultName()
 {
-    char product_model[92];
+    char product_model[PROPERTY_VALUE_MAX];
     property_get("ro.product.model", product_model, "");
 
     if (strstr(product_model, "Redmi Note 5"))
@@ -46,6 +38,7 @@ static inline const char* BtmGetDefaultName()
     // Fallback to ro.product.model
     return "";
 }
+#undef PROPERTY_VALUE_MAX
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 #define BLUETOOTH_QTI_SW TRUE
