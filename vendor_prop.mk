@@ -186,5 +186,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.wfc_avail_ovr=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.iwlan_operation_mode=legacy
+    ro.telephony.iwlan_operation_mode=legacy \
+    persist.vendor.data.iwlan.enable=true
 
