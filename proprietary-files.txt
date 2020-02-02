@@ -1304,6 +1304,8 @@ product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb
 product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
 product/framework/qcrilhook.jar|4eece9eb40a8976d2fd9a6a4d5d6dfea0c7674f5
 product/framework/qti-telephony-common.jar|5b1c23ce0d42e1b666d387eedde3444dd07e61bc
+product/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|2687777322bb36e0ae14592c7b1ac71eacbbdc95
+product/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|42e64cf6723082cd81a86636555d35e31c600a35
 vendor/bin/ATFWD-daemon|bc2492087298a328d76d60560b11e480a79f3ad9
 vendor/bin/adpl|cd2af02673c750d3cc2da4089bec751dc24f8597
 vendor/bin/hw/qcrild|8d4ef5aa4f730e29d58b7e34ebb99ee17887e761
