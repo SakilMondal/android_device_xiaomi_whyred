@@ -4,11 +4,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     vendor.video.disable.ubwc=1 \
     persist.vendor.qcomsysd.enabled=1 \
-    ro.vendor.extension_library=libqti-perfd-client.so \
     sys.vendor.shutdown.waittime=500 \
     ro.build.shutdown_timeout=0 \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
-    ro.opengles.version=196610 \
     vendor.qcom.bluetooth.soc=cherokee \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=192 \
@@ -108,22 +106,30 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
 
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.egl.hw=1 \
+    debug.enable.sglscale=1 \
+    debug.hwui.use_buffer_age=false \
+    debug.sf.disable_hwc=0 \
+    debug.sf.enable_gl_backpressure=1 \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.gpu_comp_tiling=1 \
+    debug.sf.hw=1 \
+    debug.sf.recomputecrop=0 \
+    persist.hwc.ptor.enable=true \
+    ro.opengles.version=196610 \
+    vendor.display.disable_partial_split=1 \
+    vendor.display.disable_rotator_downscale=1 \
+    vendor.display.disable_skip_validate=1 \
+    vendor.display.enable_default_color_mode=0 \
+    vendor.display.perf_hint_window=50 \
+    vendor.gralloc.enable_fb_ubwc=1
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
-
-# Rendering
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.enable.sglscale=1 \
-    debug.egl.hw=1 \
-    debug.sf.disable_hwc=0 \
-    debug.sf.recomputecrop=0 \
-    persist.hwc.ptor.enable=true \
-    debug.sf.gpu_comp_tiling=1 \
-    vendor.display.disable_partial_split=1 \
-    debug.hwui.use_buffer_age=false \
-    vendor.display.perf_hint_window=50
 
 #Set speaker protection cal tx path sampling rate to 48k
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -141,15 +147,29 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024
 
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.qti.core_ctl_max_cpu=4 \
+    ro.vendor.qti.core_ctl_min_cpu=0 \
+    ro.vendor.qti.sys.fw.bg_apps_limit=60
+
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdk.sensors.gestures=false \
+    ro.vendor.sensors.cfos=false \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sensors.dev_ori=false \
+    ro.vendor.sensors.dpc=true \
     ro.vendor.sensors.facing=false \
+    ro.vendor.sensors.iod=false \
     ro.vendor.sensors.mot_detect=true \
-    ro.vendor.sensors.pmd=true \
-    ro.vendor.sensors.sta_detect=true
+    ro.vendor.sensors.multishake=true \
+    ro.vendor.sensors.pmd=false \
+    ro.vendor.sensors.pug=true \
+    ro.vendor.sensors.spg=false \
+    ro.vendor.sensors.sta_detect=true \
+    ro.vendor.sensors.taptap_gesture=true
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -164,10 +184,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_app_phase_offset_ns=1500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000
-
-# Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -189,3 +205,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.iwlan_operation_mode=legacy \
     persist.vendor.data.iwlan.enable=true
 
+# Time services
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.delta_time.enable=true
+
+# WFD
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.wfd.virtual=0
