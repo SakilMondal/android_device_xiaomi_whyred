@@ -23,3 +23,7 @@ sys.thermal.                        u:object_r:thermal_prop:s0
 # vendor_default_prop
 fpc_kpi                             u:object_r:vendor_default_prop:s0
 gpu.stats.debug.level               u:object_r:vendor_default_prop:s0
+
+persist.vendor.camera.switch.aux    u:object_r:vendor_camera_prop:s0
+
+wifi.active                         u:object_r:wifi_active_prop:s0
