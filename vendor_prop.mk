@@ -102,6 +102,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.aac_frm_ctl.enabled=true
 
+# CNE
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cne.feature=1
+
 # Codec2 switch
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
@@ -125,6 +129,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=0 \
     vendor.display.perf_hint_window=50 \
     vendor.gralloc.enable_fb_ubwc=1
+
+# DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.dpm.feature=1 \
+    persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
