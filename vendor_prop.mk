@@ -7,7 +7,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500 \
     ro.build.shutdown_timeout=0 \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
-    vendor.qcom.bluetooth.soc=cherokee \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=192 \
     persist.vendor.audio.avs.afe_api_version=2 \
@@ -38,9 +37,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.safx.pbe.enabled=false \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.flac.sw.decoder.24bit=true \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
-    persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxhd-aac \
-    ro.vendor.bluetooth.wipower=false
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio.hw.aac.encoder=true \
@@ -98,9 +94,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.audiozoom.enable=false \
     vendor.audio.feature.snd_mon.enable=false
 
-#enable AAC frame ctl for A2DP sinks
+# Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bt.aac_frm_ctl.enabled=true
+    vendor.qcom.bluetooth.soc=cherokee \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
+    ro.vendor.bluetooth.wipower=false
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
