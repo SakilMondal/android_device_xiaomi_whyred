@@ -111,16 +111,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=1 \
-    debug.enable.sglscale=1 \
-    debug.hwui.use_buffer_age=false \
-    debug.sf.disable_hwc=0 \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.enable_hwc_vds=1 \
-    debug.sf.gpu_comp_tiling=1 \
     debug.sf.hw=1 \
-    debug.sf.recomputecrop=0 \
-    persist.hwc.ptor.enable=true \
     ro.opengles.version=196610 \
     vendor.display.disable_partial_split=1 \
     vendor.display.disable_rotator_downscale=1 \
