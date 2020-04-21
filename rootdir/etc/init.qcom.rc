@@ -714,11 +714,12 @@ service vendor.ril-daemon3 /vendor/bin/hw/rild -c 3
     group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
-service charger /sbin/chargeonlymode
+service charger /system/bin/charger
     class charger
-    group system graphics
+    user system
+    group system graphics input
     capabilities SYS_BOOT
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
 
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
