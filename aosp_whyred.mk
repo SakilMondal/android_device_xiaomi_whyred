@@ -25,6 +25,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit from custom vendor.
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # PixelExperience Properties
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_GAPPS_ARCH := arm64
