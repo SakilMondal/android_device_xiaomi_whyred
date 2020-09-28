@@ -74,6 +74,9 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
+# Signing Keys
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/oss/keys/releasekey
+
 # Shims
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
