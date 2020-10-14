@@ -1,0 +1,32 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "PixelExperience-Devices/device_xiaomi_sdm660-common",
+    "target_path": "device/xiaomi/sdm660-common",
+    "branch":      "eleven"
+  },
+  {
+    "repository"  : "vendor_xiaomi_sdm660-common",
+    "target_path" : "vendor/xiaomi/sdm660-common",
+    "branch"      : "eleven",
+    "remote"      : "pixel-devices-blobs"
+  },
+  {
+    "repository"  : "vendor_xiaomi_whyred",
+    "target_path" : "vendor/xiaomi/whyred",
+    "branch"      : "eleven",
+    "remote"      : "pixel-devices-blobs"
+  },
+  {
+    "remote":      "github",
+    "repository":  "SakilMondal/vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera",
+    "branch":      "11.x"
+  },
+  {
+    "remote":      "github",
+    "repository":  "PixelExperience-Devices/kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "eleven"
+  }
+]
