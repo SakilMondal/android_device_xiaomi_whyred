@@ -30,3 +30,4 @@ export DEVICE_COMMON=sdm660-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+
