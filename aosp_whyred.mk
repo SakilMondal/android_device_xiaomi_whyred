@@ -33,6 +33,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
