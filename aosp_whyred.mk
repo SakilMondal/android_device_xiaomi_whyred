@@ -15,9 +15,6 @@ $(call inherit-product, vendor/aosp/common.mk)
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit from custom vendor.
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 2140
 
