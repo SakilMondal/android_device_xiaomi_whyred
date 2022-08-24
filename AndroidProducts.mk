@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_whyred.mk
+    $(LOCAL_DIR)/arrow_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_whyred-user \
-    aosp_whyred-userdebug \
-    aosp_whyred-eng
+    arrow_whyred-user \
+    arrow_whyred-userdebug \
+    arrow_whyred-eng
